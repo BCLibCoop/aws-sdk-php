@@ -301,7 +301,9 @@ class S3Client extends AbstractClient
         $requiresV4 = !$currentValue
             && isset($config['region'])
             && (strpos($config['region'], 'eu-central-') === 0
-                || strpos($config['region'], 'cn-') === 0);
+                || strpos($config['region'], 'cn-') === 0
+                || strpos($config['region'], 'ca-') === 0
+            );
 
         // Use the Amazon S3 signature V4 when the value is set to "v4" or when
         // the value is not set and the region starts with "cn-".
