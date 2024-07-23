@@ -80,6 +80,11 @@ return array (
             'https' => true,
             'hostname' => 's3-us-gov-west-1.amazonaws.com',
         ),
+        'ca-central-1' => array(
+            'http' => true,
+            'https' => true,
+            'hostname' => 's3-ca-central-1.amazonaws.com',
+        ),
     ),
     'operations' => array(
         'AbortMultipartUpload' => array(
